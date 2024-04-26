@@ -13,12 +13,13 @@ CREATE TABLE basket_data (
     PRIMARY KEY (TransactionNumber)
 );
 
-LOAD DATA LOCAL INFILE "C:\Users\Juan Ignacio\OneDrive\Documents\Ideas\Market Basket Analysis\Assignment-1_Data.csv" INTO TABLE basket_data
+LOAD DATA LOCAL INFILE 'Assignment-1_Data.csv' INTO TABLE basket_data
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES
 (TransactionNumber, BillNo, Itemname, Quantity, @datevar, Price, CustomerID, Country)
 SET TransactionDate = STR_TO_DATE(@datevar,'%m/%d/%Y %H:%i');
+
 
 # Check that the first rows look good
 SELECT * FROM basket_data LIMIT 10;
