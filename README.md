@@ -4,4 +4,4 @@ Data for this educational project was obtained from the Market Basket Analysis d
 
 The details of the project can be found in MarketBasketAnalysis.ipynb
 
-To view the interactive choropleth map, use Jupyter's nbviewer. 
+Note: GitHub's rendering of Jupyter notebooks is static, which means interactive features of the notebook such as the choropleth map, will not be displayed directly on GitHub, use Jupyter's nbviewer to see it.
